@@ -9,7 +9,7 @@
 </head>
 
 <style>
-#back {
+#display {
     width:100vw;
     height:100vh;
     background-color:chocolate;
@@ -34,13 +34,25 @@
 
 
 <body>
-    <body>
-        <div id='back'><div/>
-        <div>
-            <button id="button">Cool Stuff</button>    
-        
+    
+      
+        <div id="display">
+            <button id="button">Cool Stuff</button>
         </div>
-    </body>
+    <script>
+        var myBut = document.getElementById("button");
+        var disp = document.getElementById("display");
+    
+        myBut.onclick = function(){
+            disp.style.backgroundColor = "#AAA";
+        }
+
+
+    </script>
+    
+    
+    
+    
 
 </body>
 
