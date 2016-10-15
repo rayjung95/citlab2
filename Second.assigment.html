@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Second assigment</title>
+	</head>
+	
+	<style>
+		body {
+			margin:0px;
+		}
+		#creatbox {
+			width:350px;
+			height:150px;
+			display:inline-block;
+			margin-top: 20px;
+		}
+        #clear {
+            position:fixed;
+            left:1000px;
+            top:20px;
+            
+            
+        }
+		.vertical {
+			margin-left:70px;
+			float:right;
+		}
+		#add {
+			height:80px;
+			
+		}
+		.inputbox {
+			float:left;
+			margin:5px;
+		}
+		
+        .imggirl {
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+        .headingpart {
+            width: 400px;
+            height: 100px;
+            margin-left: 500px;
+            
+        }
+        .pic_h3 {
+            float:left;
+            margin-left: 50px;
+            margin-top: 50px;
+            
+            
+        }
+        .pic_div {
+            float:left;
+            
+        }
+        #add{
+			transition:width 1s, height 1s;
+		}
+        
+	</style>
+	
+	
+	<body>
+		<div id='creatbox'>
+			<button class="inputbox" id='add'>Add Me</button>
+			<input class="inputbox" class="vertical" type='url' placeholder='Please Put IMG.file address' id='msg_1'/>
+			<input class="inputbox" class="vertical" type='text' placeholder='Please Enter heading' id='msg_2'/>
+			<input class="inputbox" class="vertical" type='text' placeholder='Please Enter words' id='msg_3'/>
+		</div>
+		<div id="big_center"></div>
+		
+		
+        <button id="clear">Div Clear Button</button>
+		
+	
+	</body>
+	<script> 
+		var addmeButton = document.getElementById("add");
+        var headingInput = document.getElementById("msg_2");    
+		var url_img = document.getElementById("msg_1");
+		var paraInput = document.getElementById("msg_3");
+		
+		
+        addmeButton.onclick = function(){
+			
+
+
+			
+            var newDiv = document.createElement ("div");
+                document.body.appendChild(newDiv);
+                newDiv.style.width = "700px";
+                newDiv.style.height = "300px";
+                newDiv.style.backgroundColor = "rgb(255,236,179)";
+                newDiv.style.marginLeft = "300px";
+					
+			var newImg = document.createElement("img");
+				newDiv.appendChild(newImg);
+				newImg.src = url_img.value;
+				newImg.className = "imggirl";
+                newImg.style.width = "200px";
+                newImg.style.height = "200px";
+                newImg.className = "pic_h3";           
+                
+                
+            var newH3 = document.createElement("h2");
+                newDiv.appendChild(newH3);
+                newH3.innerHTML = headingInput.value;
+                newH3.className = "headingpart";
+                newH3.className = "pic_h3";
+                
+            var lastDiv = document.createElement("div");
+                newDiv.appendChild(lastDiv);
+                lastDiv.style.width = "400px";
+                lastDiv.style.height = "100px";
+                lastDiv.style.marginTop ="120px";
+                lastDiv.style.marginLeft = "280px";
+                lastDiv.style.backgroundColor = "lightgray";
+                lastDiv.style.position = "absolute";
+                
+			var newPara = document.createElement("h3");
+				lastDiv.appendChild(newPara);
+				newPara.innerHTML = paraInput.value;
+				
+				big_center.appendChild(newDiv);
+        }
+        
+        
+        var clearButton = document.getElementById("clear");
+        clearButton.onclick = function() {
+			document.getElementById('big_center').innerHTML="";
+            
+            
+            
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
