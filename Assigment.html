@@ -1,151 +1,171 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Second Assignment</title>
     <style>
+        @media only screen and (max-width:400px){
+            #first {
+                display: none;
+            }
+        }
+        @media only screen and (max-width:800px) and (min-width:400px) {
+            #second {
+                display: none;
+            }
+            #third {
+                display: none;
+            }
+            #fourth {
+                display: none;
+            }
+            #fifth {
+                display: none;
+            }
+        }
 
-body {
-    margin:0;
-    font: 20px "Comic Sans MS", cursive, sans-serif
-}
-#first_second {
-    position:relative;
-    
-}
-#my_profile {
-    position:absolute;
-    width:300px;
-    height:200px;
-    top:55%;
-    left:40%;
-    z-index:1;
+        body {
+            margin:0;
+            font: 20px "Comic Sans MS", cursive, sans-serif
+        }
+        #first_second {
+            position:relative;
 
-}
-#first {
-    position:relative;
-    margin-top:0px;
-    width:100vw;
-    height:600px;
-    background-image: url(http://payload.cargocollective.com/1/2/88418/1105990/fancy00_860.jpg);
-}
+        }
+        #my_profile {
+            position:absolute;
+            width:300px;
+            height:200px;
+            top:55%;
+            left:40%;
+            z-index:1;
+
+        }
+        #first {
+            position:relative;
+            margin-top:0px;
+            width:100vw;
+            height:600px;
+            background-image: url(http://payload.cargocollective.com/1/2/88418/1105990/fancy00_860.jpg);
+        }
 
 
-#tag_name {
-    position:relative;
-    width:300px;
-    top:10%;
-    left:5%;
-}
+        #tag_name {
+            position:relative;
+            width:300px;
+            top:10%;
+            left:5%;
+        }
 
-#second {
-    width:100vw;
-    height:300px;
-    background-color:rgb(255,236,179);
-}
-#catman {
-    position:absolute;
-    width:30px;
-    height:20px;
-    padding-left:640px;
-    padding-top:80px;
-}
-#third {
-    position:relative;
-    width:100vw;
-    height:300px;
-    background-color:darkkhaki;
+        #second {
+            width:100vw;
+            height:300px;
+            background-color:rgb(255,236,179);
+        }
+        #catman {
+            position:absolute;
+            width:30px;
+            height:20px;
+            padding-left:640px;
+            padding-top:80px;
+        }
+        #third {
+            position:relative;
+            width:100vw;
+            height:300px;
+            background-color:darkkhaki;
 
-}
-.portfolio {
-    float:left;
-    position:relative;
-    width:180px;
-    height:180px;
-    margin-top:120px;
-    margin-right:90px;
-}
+        }
+        .portfolio {
+            float:left;
+            position:relative;
+            width:180px;
+            height:180px;
+            margin-top:120px;
+            margin-right:90px;
+        }
 
-#t_1 {
-    position:absolute;
-    width:80px;
-    height:50px;
-    margin-top:110px;
-    margin-left:120px;
-   
-}
-#t_2 {
-    position:absolute;
-    width:80px;
-    height:50px;
-    margin-top:110px;
-    margin-left:400px;
-   
-}
-#t_3 {
-    position:absolute;
-    width:80px;
-    height:50px;
-    margin-top:110px;
-    margin-left:670px;
-   
-}
-#t_4 {
-    position:absolute;
-    width:80px;
-    height:50px;
-    margin-top:110px;
-    margin-left:940px;
-   
-}
-#t_5 {
-    position:absolute;
-    width:80px;
-    height:50px;
-    margin-top:110px;
-    margin-left:1210px;
-}
-#fourth {
-    width:100vw;
-    height:400px;
-    background-color:goldenrod;
-}
-#cat {
-    width:300px;
-    height:300px;
-    padding-top:50px;
-    padding-left:60px;
-}
-#bio {
-    position:absolute;
-    width:50px;
-    height:50px;
-    margin-left:600px;
-    margin-top:50px;
-}
-#meow {
-    position:absolute;
-    width:10px;
-    height:700px;
-    margin-left:600px;
-    margin-top: 100px;
-}
+        #t_1 {
+            position:absolute;
+            width:80px;
+            height:50px;
+            margin-top:110px;
+            margin-left:120px;
 
-#fifth {
-    position:relative;
+        }
+        #t_2 {
+            position:absolute;
+            width:80px;
+            height:50px;
+            margin-top:110px;
+            margin-left:400px;
 
-}
+        }
+        #t_3 {
+            position:absolute;
+            width:80px;
+            height:50px;
+            margin-top:110px;
+            margin-left:670px;
 
-#bottom_line {
-    width:100vw;
-    height:500px;
-}
-#bottom_tag {
-    position:absolute;
-    width:10px;
-    margin-top: 300px;
-    margin-left:900px;
-    
+        }
+        #t_4 {
+            position:absolute;
+            width:80px;
+            height:50px;
+            margin-top:110px;
+            margin-left:940px;
 
-}
+        }
+        #t_5 {
+            position:absolute;
+            width:80px;
+            height:50px;
+            margin-top:110px;
+            margin-left:1210px;
+        }
+        #fourth {
+            width:100vw;
+            height:400px;
+            background-color:goldenrod;
+        }
+        #cat {
+            width:300px;
+            height:300px;
+            padding-top:50px;
+            padding-left:60px;
+        }
+        #bio {
+            position:absolute;
+            width:50px;
+            height:50px;
+            margin-left:600px;
+            margin-top:50px;
+        }
+        #meow {
+            position:absolute;
+            width:10px;
+            height:700px;
+            margin-left:600px;
+            margin-top: 100px;
+        }
+
+        #fifth {
+            position:relative;
+
+        }
+
+        #bottom_line {
+            width:100vw;
+            height:500px;
+        }
+        #bottom_tag {
+            position:absolute;
+            width:10px;
+            margin-top: 300px;
+            margin-left:900px;
+
+
+        }
 
 
 
@@ -153,8 +173,19 @@ body {
 
     </style>
 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    
 </head>
-<html>
+
     <body>
         <div id="first_second">
             <img id="my_profile" src="http://webneel.com/image/logo/5-cat-logo.gif">
