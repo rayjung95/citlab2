@@ -88,6 +88,8 @@ $(document).ready(function(){
         newDiv.style.backgroundColor="aquamarine";
         var commentDiv = document.createElement("div");
         var text = document.createTextNode(userComment.value);
+        commentDiv.style.textAlign="center";
+        commentDiv.style.fontSize="200%";
         commentDiv.appendChild(text);
         newDiv.appendChild(commentDiv);
         commentDiv.style.marginLeft="50px";
@@ -102,6 +104,8 @@ $(document).ready(function(){
         userDiv.style.marginTop="70px";
         userDiv.style.backgroundColor="cornsilk";
         userDiv.style.borderRadius="10%";
+        userDiv.style.textAlign="center";
+        userDiv.style.fontSize="170%";
         userDiv.innerHTML=userInput.value;
         
         var imgDiv = document.createElement("img");
